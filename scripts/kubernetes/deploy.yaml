@@ -28,6 +28,8 @@ spec:
         env:
         - name: PORT
           value: "4000"
+      imagePullSecrets:
+      - name: my-acr-secret
 ---
 apiVersion: v1
 kind: Service
