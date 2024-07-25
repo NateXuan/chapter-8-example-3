@@ -63,3 +63,6 @@ jobs:
       #
       - name: Deploy
         run: ./scripts/deploy.sh
+
+      - name: Restart Deployment
+        run: kubectl rollout restart deployment video-streaming
